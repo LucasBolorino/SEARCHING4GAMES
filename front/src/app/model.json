@@ -1,0 +1,29 @@
+{ 
+    "title": "Jogo",
+    "entity": "jogo",
+    "api": {
+      "url": "http://localhost:5125/api/Jogo"
+    },
+    "filter": [
+      "nome"
+    ],
+    "fields": [
+        {
+            "id": "id",
+            "label": "Id",
+            "isId": true,
+            "readonly": true,
+            "type": "number"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "label": "Nome"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "label": "Descricao"
+          }
+    ]
+}
