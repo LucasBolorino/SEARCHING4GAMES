@@ -1,0 +1,22 @@
+USE [jogo]
+GO
+
+/****** Object:  Table [dbo].[jogo]    Script Date: 30/03/2022 16:53:39 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[jogo](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[nome] [varchar](20) NOT NULL,
+	[descricao] [varchar](80) NOT NULL,
+ CONSTRAINT [PK_Jogo] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
